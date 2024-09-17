@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: 50px 500px;
+     
+}
+.nav{
+    background: #eaac8b;
+    text-align: center;
+}
+.header{
+    background: #E56B6F;
+    display: grid;
+    text-align: center;
+    
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 400px;
+    grid-template-areas: 'sidebar1 box banana';
+    gap: 15px;
+}
+.sidebar1{
+    background: #955361;
+}
+.box{
+    grid-area: box;
+    background: rgb(71, 28, 68);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.box>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-1{
+   background: purple;
+    margin: 15px;
+}
+.box-2{
+    background-color: purple;
+    margin: 15px;
+}
+.box-3{
+    background-color: purple;
+    margin: 15px;
+}
+.box-4{
+    background-color: purple;
+    margin: 15px;
+}
+.box-5{
+    background-color: purple;
+    margin: 15px;
+}
+.box-6{
+    background-color: purple;
+    margin: 15px;
+}
+.sidebar2{
+    display: grid;
+    background: #955361;
+    grid-template-rows: 200px 200px;
+}
+.banana-1{
+    background: #B56576;
+}
+.banana-2{
+    background: #6D597A;
+}
+.cat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'footer-left footer-center footer-Right';
+    height: 90px;
+}
+.cat>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-left{
+    background: #355070;
+    grid-area: footer-left;
+}
+.footer-center{
+    grid-area: footer-center;
+    background: #293e58;
+}
+.footer-Right{
+    background: #1b293b;
+    grid-area: footer-Right;
+}
